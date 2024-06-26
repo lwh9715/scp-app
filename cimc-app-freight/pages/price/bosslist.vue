@@ -85,7 +85,7 @@
 				userInfo: {},
 				datatemp: {},
 				watermarkConfig: {
-					text: '中集世倡0001',
+					text: '中集世倡',
 					font: '12px 微软雅黑',
 					textColor: '#dcdfe6',
 					width: 210, //水印文字的水平间距
@@ -101,7 +101,7 @@
 			if (islogin && user) {
 				this.watermarkConfig.text = user.data.data.name + user.data.data.mobile.substring(7, 11)
 				uni.showLoading({
-					title: '加载中',
+					title: 'Loading',
 					mask: true
 				});
 				uni.request({

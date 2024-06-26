@@ -8,6 +8,7 @@
 			"path": "pages/price/index",
 			"style": {
 				"app-plus": {
+					"softinputMode": "adjustResize",
 					"scrollIndicator": "none",
 					"bounce": "none",
 					"titleNView": {
@@ -81,30 +82,13 @@
 			"path": "pages/price/search",
 			"style": {
 				"app-plus": {
+					"softinputMode": "adjustResize",
 					"scrollIndicator": "none",
 					"bounce": "none",
 					"titleNView": {
 						"backgroundColor": "#6DBA52",
 						"titleText": "港口搜索",
 						"titleSize": "35rpx"
-					}
-				}
-			}
-		},
-		{
-			"path": "pages/index/index"
-		},
-		{
-			"path": "pages/login/login"
-		},
-		{
-			"path": "pages/mind/mind",
-			"style": {
-				"app-plus": {
-					"bounce": "none",
-					"titleNView": {
-						"backgroundColor": "#6DBA52"
-
 					}
 				}
 			}
@@ -116,23 +100,6 @@
 		"navigationBarBackgroundColor": "#007AFF",
 		"backgroundColor": "#FFFFFF"
 
-	},
-	"tabBar": {
-		"color": "#7D7D7D",
-		"selectedColor": "#6DBA52",
-		"borderStyle": "black",
-		"backgroundColor": "#fff",
-		"list": [{
-			"pagePath": "pages/index/index",
-			"text": "首页",
-			"iconPath": "/static/tabIcon/home1.png",
-			"selectedIconPath": "/static/tabIcon/hones1.png"
-		}, {
-			"pagePath": "pages/mind/mind",
-			"text": "我的",
-			"iconPath": "/static/tabIcon/my.png",
-			"selectedIconPath": "/static/tabIcon/mys.png"
-		}]
 	},
 	"condition": { //模式配置，仅开发期间生效
 		"current": 0, //当前激活的模式(list 的索引项)

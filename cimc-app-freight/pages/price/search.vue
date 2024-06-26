@@ -61,8 +61,9 @@
 			},
 			search(val) {
 				this.$refs.popup.open('bottom')
+				
 				if (this.index.id == 0) {
-					this.$H.get('/scp/service?src=flexbox&action=fclpol&q=' + val.value +
+					this.$H.get('/scp/service?src=flexbox&action=fclpolapp&q=' + val.value +
 						'&p=1&s=50', {}, {}).then(res => {
 						this.portlist = res.results
 					}).catch(res => {
@@ -72,7 +73,7 @@
 						});
 					})
 				} else {
-					this.$H.post('/scp/service?src=flexbox&action=fclpod&q=' + val.value +
+					this.$H.post('/scp/service?src=flexbox&action=fclpodapp&q=' + val.value +
 						'&p=1&s=50', {}, {}).then(res => {
 						this.portlist = res.results
 					}).catch(res => {
@@ -148,7 +149,7 @@
 				if (isRet) {
 					this.list = isRet
 				} else {
-					this.$H.post('/scp/service?src=flexbox&action=fclpod&q=&p=1&s=500', {}, {}).then(res => {
+					this.$H.post('/scp/service?src=flexbox&action=fclpol&q=&p=1&s=100', {}, {}).then(res => {
 						var list_map = new Array();
 						var data = res.results
 						for (var i = 0; i < data.length; i++) {
